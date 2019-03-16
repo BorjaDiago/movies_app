@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="content-film">
+        <h1>Movies Project Home</h1>
+        <p class="title">Welcome to <em>Movies Project</em>, a very basic Django website developed by Borja Diago</p>
+
+        <p>The movies database has the following record:</p>
+
+        <ul>
+            <li><strong>List of Movies</strong></li>
+            <li><strong>-----------------------------------</strong></li>
+            {% for movie in all_movies %}
+                <li><strong>Movie:</strong><a href="{% url 'movie-detail' movie.uuid %}"> {{ movie.title }} </a></li>
+                <li><strong>Rating:</strong> {{ movie.rating }}</li>
+                <li><strong>-----------------------------------</strong></li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
