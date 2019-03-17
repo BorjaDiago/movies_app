@@ -9,10 +9,12 @@ Se desea poder listar un conjunto de películas en una pagina web almacenadas en
 Requisitos Funcionales:
 
 Framework a implementar DJANGO:
+
 La version de Django escogida ha sido la 2.1.7
 
 
 La implementación debe implementar un ORM:
+
 El ORM escogido ha sido el que viene por defecto en Django, capaz de gestionar bases de datos como MySql, PostgreSQL, SQLite..
 
 
@@ -24,9 +26,13 @@ Para abordar esta problematica he optado por crear una capa 'services' que es la
 Debe separarse el código en tres capas, acceso a datos, capa de negocio y vista/controller:
 
 Las capas han sido:
+
 -Capa 'models' -----> Encargada de la creación de los modelos y de su relación con la bbdd.
+
 -Capa 'services' -----> Encargada de la gestión entre los modelos/bbdd y la capa de negocio(views).
+
 -Capa 'views' -----> Encargada de la lógica de negocio.
+
 -Capa 'templates' -----> Encargada de las vistas finales.
 
 
