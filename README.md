@@ -1,7 +1,6 @@
 # movies_app
 Welcome to Movies Project, a very basic Django website developed by Borja Diago
 
-Proyecto realizado como prueba para WooM.
 Requisitos Generales:
 
 Se desea poder listar un conjunto de películas en una pagina web almacenadas en una base de datos y que cuando se seleccione una, se pueda ver el detalle. Las películas tienen titulo,actores, director rating y sinopsis. 
