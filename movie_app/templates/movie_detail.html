@@ -4,14 +4,19 @@
     <div class="content-film">
         <h1>Title: {{ movie.title }}</h1>
 
-        <p><strong>Director:</strong> <a href="">{{ movie.director }}</a></p>
+        <p><strong>Director:</strong>
+            {% for dir in director %}
+                <a href="">{{ dir }}</a>
+            {% endfor %}
+        </p>
         <p><strong>Rating:</strong> {{ rating }}</p>
 
         <div>
-        <h4>Characters</h4>
+        <p><strong>Characters:</strong>
             {% for char in characters %}
-                <p>{{ char }}</p>
+                <a href="">{{ char }}</a>
             {% endfor %}
+            </p>
         </div>
 
 
