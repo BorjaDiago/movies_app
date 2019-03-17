@@ -17,3 +17,17 @@ class MovieServices(object):
             return Movie.objects.all()
         except Movie.DoesNotExist:
             raise Http404
+
+    @staticmethod
+    def get_characters_from_movie(movie):
+        try:
+            return movie.characters.all()
+        except Exception as ex:
+            return None
+
+    @staticmethod
+    def get_directors_from_movie(movie):
+        try:
+            return movie.director.all()
+        except Exception as ex:
+            return None
