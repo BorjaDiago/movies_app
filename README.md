@@ -1,7 +1,4 @@
 # movies_app
-Welcome to Movies Project, a very basic Django website developed by Borja Diago
-
-# movies_app
 Welcome to Movies Project, a very basic Django website into a docker developed by Borja Diago
 
 Requisitos Generales:
