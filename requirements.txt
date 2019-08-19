@@ -1,2 +1,2 @@
-Django>=2.1.7,<2.2.0
+Django>=2.2.4
 Djangorestframework>=3.9.2,<3.10.0
